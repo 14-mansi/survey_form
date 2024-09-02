@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Survey Form</title>
+  </head>
+  <body>
+      <h1 id="title">Cafeteria Survey Form</h1>
+    <p id="description">Thank you for giving us your feedback to help us grow</p>
+    <form id="survey-form">
+      <label id="name-label">Enter your name: <input type="text" id="name" placeholder="Name" required /></label>
+      <label id="email-label">Enter your email: <input type="email" id="email" placeholder="Email" required /></label>
+      <label id="number-label">Enter your age: (optional)<input type="number" id="number" placeholder="Age" min="13" max="120" /></label>
+      <div>How did you hear about us?<select id="dropdown">
+        <option>(Select one)</option>
+        <option>Friends</option>
+        <option>Social media</option>
+        <option>other</option>
+      </select> </div>
+      <div>How was your experience? <label for="good" id="good"> <input type="radio" value="good" name="experience" checked /> Good </label>
+        <label for="average" id="average">
+        <input type="radio" name="experience" value="average" /> Average </label>
+        <label for="bad" id="bad">
+      <input type="radio" value="bad" name="experience" /> Bad </label> </div>
+      <div>What did you liked the most?
+        <label><input type="checkbox" value="1"> Sandwiches </label>
+        <label><input type="checkbox" value="2"> Pasta </label>
+        <label><input type="checkbox" value="3"> Noodles </label>
+        <label><input type="checkbox" value="4"> Dumplings </label>
+        <label><input type="checkbox" value="5"> Beverages </label>
+        <label><input type="checkbox" value="6"> All </label>
+      </div>
+      <div>Any comments or suggestions
+      <textarea placeholder="Comments..."></textarea> </div>
+      <input id="submit" type="submit"></input>
+    </form>
+  </body>
+</html>
